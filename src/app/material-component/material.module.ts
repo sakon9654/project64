@@ -32,6 +32,9 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { TablelistComponent } from './tablelist/tablelist.component';
+import { SupplielistComponent } from './supplielist/supplielist.component';
+import { DurablelistComponent } from './durablelist/durablelist.component';
+
 
 @NgModule({
   imports: [
@@ -64,7 +67,9 @@ import { TablelistComponent } from './tablelist/tablelist.component';
     SnackbarComponent,
     SliderComponent,
     SlideToggleComponent,
-    TablelistComponent
+    TablelistComponent,
+    SupplielistComponent,
+    DurablelistComponent
   ]
 })
 export class MaterialComponentsModule {}
