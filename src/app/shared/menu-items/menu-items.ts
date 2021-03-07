@@ -53,9 +53,24 @@ const MENUITEMS = [
   }
 ];
 
+const MENUUSER = [
+  { state: 'supplie', name: 'รายการพัสดุ', type: 'link', icon: 'view_list' },
+  { state: 'durable', name: 'รายการครุภัณฑ์', type: 'link', icon: 'view_list' },
+  { state: 'button', type: 'link', name: 'เบิกพัสดุ', icon: 'wysiwyg' },
+  { state: 'grid', type: 'link', name: 'Grid List', icon: 'view_comfy' },
+  { state: 'lists', type: 'link', name: 'Lists', icon: 'view_list' },
+  { state: 'menu', type: 'link', name: 'Menu', icon: 'view_headline' }
+]
+
 @Injectable()
 export class MenuItems {
   getMenuitem(): Menu[] {
     return MENUITEMS;
+  }
+}
+
+export class MenuUser {
+  getMenuitem(): Menu[] {
+    return MENUUSER;
   }
 }

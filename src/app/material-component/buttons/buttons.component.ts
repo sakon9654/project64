@@ -8,4 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class ButtonsComponent {
   constructor() { }
+
+  keytest(){
+    console.log('test')
+  }
 }
