@@ -16,7 +16,8 @@ import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
-import { TablelistComponent } from './tablelist/tablelist.component'
+import { TablelistComponent } from './tablelist/tablelist.component';
+import { DurablelistComponent } from './durablelist/durablelist.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ export const MaterialRoutes: Routes = [
   {
     path: 'table',
     component: TablelistComponent
+  },
+  {
+    path: 'durable',
+    component: DurablelistComponent
   },
   {
     path: 'grid',
