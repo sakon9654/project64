@@ -35,6 +35,7 @@ import { TablelistComponent } from './tablelist/tablelist.component';
 import { SupplielistComponent } from './supplielist/supplielist.component';
 import { DurablelistComponent } from './durablelist/durablelist.component';
 import { RevealComponent } from './reveal/reveal.component';
+import { RevealDialogComponent } from './reveal-dialog/reveal-dialog.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { RevealComponent } from './reveal/reveal.component';
     TablelistComponent,
     SupplielistComponent,
     DurablelistComponent,
-    RevealComponent
+    RevealComponent,
+    RevealDialogComponent
   ]
 })
 export class MaterialComponentsModule {}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { RevealDialogComponent} from '../reveal-dialog/reveal-dialog.component'
 
 @Component({
   selector: 'app-reveal',
@@ -7,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RevealComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
   keytest(){
-    console.log('test')
-  }
+      const dialogRef = this.dialog.open(RevealDialogComponent);
+  
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+    }
 }
