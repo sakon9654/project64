@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import {SelectionModel} from '@angular/cdk/collections';
+import { RevealService,Item } from '../../shared/service/reveal.service';
 
 export interface PeriodicElement {
   name: string;
@@ -29,7 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class RevealDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(public Source: RevealService) { }
 
   ngOnInit(): void {
   }
@@ -62,6 +63,7 @@ export class RevealDialogComponent implements OnInit {
 
   test(row: any){
     console.log(row)
+    this.Source.pushService(row)
   }
 
 }
