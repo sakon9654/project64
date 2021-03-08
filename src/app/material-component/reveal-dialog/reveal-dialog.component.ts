@@ -25,7 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-reveal-dialog',
   templateUrl: './reveal-dialog.component.html',
-  styleUrls: ['./reveal-dialog.component.css']
+  styleUrls: ['./reveal-dialog.component.css'],
 })
 export class RevealDialogComponent implements OnInit {
 
@@ -58,6 +58,10 @@ export class RevealDialogComponent implements OnInit {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
+  }
+
+  test(row: any){
+    console.log(row)
   }
 
 }
