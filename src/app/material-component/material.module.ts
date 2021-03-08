@@ -34,6 +34,7 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { TablelistComponent } from './tablelist/tablelist.component';
 import { SupplielistComponent } from './supplielist/supplielist.component';
 import { DurablelistComponent } from './durablelist/durablelist.component';
+import { RevealComponent } from './reveal/reveal.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { DurablelistComponent } from './durablelist/durablelist.component';
     SlideToggleComponent,
     TablelistComponent,
     SupplielistComponent,
-    DurablelistComponent
+    DurablelistComponent,
+    RevealComponent
   ]
 })
 export class MaterialComponentsModule {}

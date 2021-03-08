@@ -19,11 +19,16 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { TablelistComponent } from './tablelist/tablelist.component';
 import { DurablelistComponent } from './durablelist/durablelist.component';
 import { SupplielistComponent } from './supplielist/supplielist.component';
+import { RevealComponent} from './reveal/reveal.component';
 
 export const MaterialRoutes: Routes = [
   {
     path: 'button',
     component: ButtonsComponent
+  },
+  {
+    path: 'reveal',
+    component: RevealComponent
   },
   {
     path: 'supplie',
