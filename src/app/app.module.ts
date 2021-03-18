@@ -18,6 +18,13 @@ import {MatTableModule} from '@angular/material/table';
 import { SharedModule } from './shared/shared.module';
 import { SpinnerComponent } from './shared/spinner.component';
 import { LoginComponent } from './index/login/login.component';
+import { RegisterComponent } from './index/register/register.component';
+import { HomeComponent } from './index/home/home.component';
+import { ProfileComponent } from './index/profile/profile.component';
+import { BoardAdminComponent } from './index/board-admin/board-admin.component';
+import { BoardModeratorComponent } from './index/board-moderator/board-moderator.component';
+import { BoardUserComponent } from './index/board-user/board-user.component';
+import { authInterceptorProviders  } from './helper/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -26,7 +33,13 @@ import { LoginComponent } from './index/login/login.component';
     AppHeaderComponent,
     SpinnerComponent,
     AppSidebarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +52,7 @@ import { LoginComponent } from './index/login/login.component';
     RouterModule.forRoot(AppRoutes)
   ],
   providers: [
+    authInterceptorProviders,
     {
       provide: LocationStrategy,
       useClass: PathLocationStrategy
