@@ -12,12 +12,12 @@ import { RevealService,Item } from '../../shared/service/reveal.service';
 export class RevealComponent implements OnInit {
 
   public row:Array<Item> = [];
-
+  key :string = '';
   constructor(
-              public dialog: MatDialog,
-              public Source: RevealService
-              ) { }
-
+    public dialog: MatDialog,
+    public Source: RevealService
+    ) { }
+    
   ngOnInit(): void {
     this.Source.source$.subscribe({
       next: s => {
@@ -33,6 +33,12 @@ export class RevealComponent implements OnInit {
       dialogRef.afterClosed().subscribe(result => {
         console.log(`Dialog result: ${result}`);
       });
+      console.log(this.key);
+      this.Source.filter(this.key).subscribe(
+        data => {
+          console.log(data);
+        }
+      )
   }
 
  

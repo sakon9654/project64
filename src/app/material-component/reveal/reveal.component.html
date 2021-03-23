@@ -3,7 +3,7 @@
 		<mat-card-title>ยืมพัสดุ</mat-card-title>
 		<mat-form-field appearance="outline">
 			<mat-label>ค้นหาพัสดุ</mat-label>
-			<input matInput placeholder="Placeholder" (keyup.enter)="keytest()">
+			<input [(ngModel)]="key" matInput placeholder="Placeholder" (keyup.enter)="keytest()">
 			<mat-hint>โปรดกรอกชื่อพัสดุ</mat-hint>
 		</mat-form-field>
 		<br>
