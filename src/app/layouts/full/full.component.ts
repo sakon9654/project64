@@ -43,6 +43,8 @@ export class FullComponent implements OnDestroy, AfterViewInit, OnInit {
       console.log(this.roles)
       localStorage.setItem('auth', this.roles[0])
       this.username = user.username;
+    } else {
+      localStorage.removeItem('auth')
     }
   }
 
