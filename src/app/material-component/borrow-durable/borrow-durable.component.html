@@ -1,6 +1,6 @@
 <mat-card>
-	<mat-card-content>
-		<mat-card-title>เบิกพัสดุ</mat-card-title>
+    <mat-card-content>
+        <mat-card-title>ยืมครุภัณฑ์</mat-card-title>
 		<mat-form-field appearance="outline">
 			<mat-label>ค้นหาพัสดุ</mat-label>
 			<input [(ngModel)]="key" matInput placeholder="Placeholder" (keyup.enter)="keytest()">
@@ -45,5 +45,5 @@
 			<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 			<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 		  </table>
-	</mat-card-content>
+    </mat-card-content>
 </mat-card>

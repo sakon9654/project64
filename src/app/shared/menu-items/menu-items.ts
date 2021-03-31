@@ -57,9 +57,9 @@ const MENUUSER = [
   { state: 'supplie', name: 'รายการพัสดุ', type: 'link', icon: 'view_list' },
   { state: 'durable', name: 'รายการครุภัณฑ์', type: 'link', icon: 'view_list' },
   { state: 'reveal', type: 'link', name: 'เบิกพัสดุ', icon: 'wysiwyg' },
-  { state: 'grid', type: 'link', name: 'Grid List', icon: 'view_comfy' },
-  { state: 'lists', type: 'link', name: 'Lists', icon: 'view_list' },
-  { state: 'menu', type: 'link', name: 'Menu', icon: 'view_headline' }
+  { state: 'bor-durable', type: 'link', name: 'ยืมครุภัณฑ์', icon: 'wysiwyg' },
+  { state: 'from', type: 'link', name: 'แบบสำรวจ', icon: 'view_list' },
+  { state: 'register', type: 'link', name: 'เพิ่มสมาชิก', icon: 'view_headline' }
 ]
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import { from } from 'rxjs';
+
 import { RevealDialogComponent} from '../reveal-dialog/reveal-dialog.component';
 import { RevealService,Item } from '../../shared/service/reveal.service';
 
@@ -26,14 +26,16 @@ export class RevealComponent implements OnInit {
     })
   }
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'supplie_name','price', 'unit', 'unit_name'];
 
   keytest(){
       const dialogRef = this.dialog.open(RevealDialogComponent);
       dialogRef.afterClosed().subscribe(result => {
         console.log(`Dialog result: ${result}`);
+        localStorage.removeItem('filterKey');
       });
       console.log(this.key);
+      localStorage.setItem('filterKey', this.key);
       this.Source.filter(this.key).subscribe(
         data => {
           console.log(data);

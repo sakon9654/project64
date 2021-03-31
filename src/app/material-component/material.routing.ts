@@ -20,6 +20,9 @@ import { TablelistComponent } from './tablelist/tablelist.component';
 import { DurablelistComponent } from './durablelist/durablelist.component';
 import { SupplielistComponent } from './supplielist/supplielist.component';
 import { RevealComponent} from './reveal/reveal.component';
+import { BorrowDurableComponent } from './borrow-durable/borrow-durable.component';
+import { FromComponent } from './from/from.component';
+import { RegisterComponent } from './register/register.component';
 
 export const MaterialRoutes: Routes = [
   {
@@ -39,12 +42,12 @@ export const MaterialRoutes: Routes = [
     component: DurablelistComponent
   },
   {
-    path: 'grid',
-    component: GridComponent
+    path: 'bor-durable',
+    component: BorrowDurableComponent
   },
   {
-    path: 'lists',
-    component: ListsComponent
+    path: 'from',
+    component: FromComponent
   },
   {
     path: 'menu',
@@ -97,5 +100,9 @@ export const MaterialRoutes: Routes = [
   {
     path: 'slide-toggle',
     component: SlideToggleComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   }
 ];

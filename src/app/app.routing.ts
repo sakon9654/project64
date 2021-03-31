@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { FullComponent } from './layouts/full/full.component';
 import { LoginComponent } from './index/login/login.component';
 import { HomeComponent } from './index/home/home.component';
-import { RegisterComponent } from './index/register/register.component';
+import { RegisterComponent } from './material-component/register/register.component';
 import { ProfileComponent } from './index/profile/profile.component';
 import { BoardAdminComponent } from './index/board-admin/board-admin.component';
 import { BoardModeratorComponent } from './index/board-moderator/board-moderator.component';
@@ -32,7 +32,6 @@ export const AppRoutes: Routes = [
   },
   { path: 'login',component: LoginComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },

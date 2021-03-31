@@ -36,6 +36,10 @@ import { SupplielistComponent } from './supplielist/supplielist.component';
 import { DurablelistComponent } from './durablelist/durablelist.component';
 import { RevealComponent } from './reveal/reveal.component';
 import { RevealDialogComponent } from './reveal-dialog/reveal-dialog.component';
+import { BorrowDurableComponent } from './borrow-durable/borrow-durable.component';
+import { DialogBorComponent } from './dialog-bor/dialog-bor.component';
+import { FromComponent } from './from/from.component';
+import { FromDialogComponent } from './from-dialog/from-dialog.component';
 
 
 @NgModule({
@@ -73,7 +77,11 @@ import { RevealDialogComponent } from './reveal-dialog/reveal-dialog.component';
     SupplielistComponent,
     DurablelistComponent,
     RevealComponent,
-    RevealDialogComponent
+    RevealDialogComponent,
+    BorrowDurableComponent,
+    DialogBorComponent,
+    FromComponent,
+    FromDialogComponent
   ]
 })
 export class MaterialComponentsModule {}

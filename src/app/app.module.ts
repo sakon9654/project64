@@ -18,7 +18,7 @@ import {MatTableModule} from '@angular/material/table';
 import { SharedModule } from './shared/shared.module';
 import { SpinnerComponent } from './shared/spinner.component';
 import { LoginComponent } from './index/login/login.component';
-import { RegisterComponent } from './index/register/register.component';
+import { RegisterComponent } from './material-component/register/register.component';
 import { HomeComponent } from './index/home/home.component';
 import { ProfileComponent } from './index/profile/profile.component';
 import { BoardAdminComponent } from './index/board-admin/board-admin.component';

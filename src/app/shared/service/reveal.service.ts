@@ -16,8 +16,7 @@ export class RevealService {
     
 
     private item: Array<Item> = [
-        {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-        {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
+        
     ]
 
     menu$: Subject<Object> = new Subject<Object>();
@@ -38,8 +37,11 @@ export class RevealService {
 }
 
 export interface Item {
-    name: string;
-    position: number;
-    weight: number;
-    symbol: string;
+    id: number;
+  supplie_name: string;
+  unit: number;
+  price: number;
+  unit_name: string;
+  createdAt: string;
+  updatedAt: string;
 }
