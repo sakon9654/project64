@@ -4,4 +4,15 @@ dialog {
 
 table {
     width: 100%;
+    border: 3px solid rgb(5, 5, 5);
+}
+
+.card{
+  width: 100%;
+  border: 3px solid rgb(5, 5, 5);
+  height: 100%;
+}
+
+mat-grid-tile{
+ margin-top: 1px;
 }
