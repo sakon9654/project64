@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
+import { FromDialogComponent } from '../from-dialog/from-dialog.component';
 import { RevealDialogComponent} from '../reveal-dialog/reveal-dialog.component';
 
 export interface PeriodicElement {
@@ -31,6 +32,7 @@ export class FromComponent implements OnInit {
 
   public row:Array<any> = [];
   key :string = '';
+  name: String = '';
 
   constructor(public dialog: MatDialog) { }
 
@@ -39,10 +41,13 @@ export class FromComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
-  test(row: any){
-    const dialogRef = this.dialog.open(RevealDialogComponent);
+  test(row:any){
+    const dialogRef = this.dialog.open(FromDialogComponent);
+    dialogRef.componentInstance.name = row.name
+    dialogRef.componentInstance.position = row.position
+    dialogRef.componentInstance.weight = row.weight
+    dialogRef.componentInstance.symbol = row.symbol
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
     });
     console.log(row)
   }

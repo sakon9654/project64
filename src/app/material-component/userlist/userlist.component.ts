@@ -43,6 +43,10 @@ export class UserlistComponent implements OnInit {
   }
   openDetail(row: any){
     const detail = this.dialog.open(UserDetailComponent)
+    detail.componentInstance.name = row.name
+    detail.componentInstance.position = row.position
+    detail.componentInstance.weight = row.weight
+    detail.componentInstance.symbol = row.symbol
     console.log(row.name)
   }
 

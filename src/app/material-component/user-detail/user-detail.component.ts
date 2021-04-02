@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDetailComponent implements OnInit {
 
+  name: String = ''
+  position: number = 0
+  weight: number = 0
+  symbol: string = ''
+
   constructor() { }
 
   ngOnInit(): void {

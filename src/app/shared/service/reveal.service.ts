@@ -52,6 +52,41 @@ export class RevealService {
         price: 100,
         unit_name: "ชิ้น"
       },
+      {
+        id: "1",
+        supplie_name: "supplie01",
+        unit: 2,
+        price: 100,
+        unit_name: "ชิ้น"
+      },
+      {
+        id: "1",
+        supplie_name: "supplie01",
+        unit: 2,
+        price: 100,
+        unit_name: "ชิ้น"
+      },
+      {
+        id: "1",
+        supplie_name: "supplie01",
+        unit: 2,
+        price: 100,
+        unit_name: "ชิ้น"
+      },
+      {
+        id: "1",
+        supplie_name: "supplie01",
+        unit: 2,
+        price: 100,
+        unit_name: "ชิ้น"
+      },
+      {
+        id: "1",
+        supplie_name: "supplie01",
+        unit: 2,
+        price: 100,
+        unit_name: "ชิ้น"
+      },
     ]
 
     menu$: Subject<Object> = new Subject<Object>();
